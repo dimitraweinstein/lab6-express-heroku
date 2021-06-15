@@ -1,0 +1,20 @@
+{
+  "name": "lab6-express-heroku",
+  "version": "1.0.0",
+  "description": "Lab 06: Tested Express on Heroku",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dimitraweinstein/lab6-express-heroku.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dimitraweinstein/lab6-express-heroku/issues"
+  },
+  "homepage": "https://github.com/dimitraweinstein/lab6-express-heroku#readme"
+}
