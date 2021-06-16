@@ -2,10 +2,11 @@ console.log('Hello World');
 
 const express = require('express');
 const owls = require('./data.js');
+const cors = require('cors');
 const app = express();
-const port = 3000;
 
-// app.use(cors());
+
+app.use(cors());
 
 app.get('/owls', (req, res) => { 
 
@@ -21,10 +22,7 @@ app.get('/owls/:id', (req, res) => {
     const owlsEntity = owls.find((singleOwl) => singleOwl.id === owlId);
     
 
-
     res.json(owlsEntity);
 });
 
-app.listen(port, () => {
-    console.log(`Example app listening at http://localhost:${port}`);
-});
+module.exports = app;
