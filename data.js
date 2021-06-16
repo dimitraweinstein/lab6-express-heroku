@@ -1,6 +1,6 @@
 
 
-export const owlsEntity =[
+const owls =[
 {
     id: 1,
     name: 'Barn Owl',
@@ -51,3 +51,5 @@ export const owlsEntity =[
     habitat: 'Boreal forests',
     price: 2000.00,
 }];
+
+module.exports = owls;
