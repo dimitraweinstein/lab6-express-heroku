@@ -16,5 +16,11 @@
   "bugs": {
     "url": "https://github.com/dimitraweinstein/lab6-express-heroku/issues"
   },
-  "homepage": "https://github.com/dimitraweinstein/lab6-express-heroku#readme"
+  "homepage": "https://github.com/dimitraweinstein/lab6-express-heroku#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "jest": "^27.0.4",
+    "supertest": "^6.1.3"
+  }
 }
