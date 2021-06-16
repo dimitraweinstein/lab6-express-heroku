@@ -9,16 +9,20 @@ const port = 3000;
 
 app.get('/owls', (req, res) => { 
 
-    res.send(owls);
+
+
+    res.json(owls);
+    console.log(owls);
 });
 
 app.get('/owls/:id', (req, res) => { 
 
-    const id = Number(req.params.id);
+    const owlId = Number(req.params.id);
+    const owlsEntity = owls.find((singleOwl) => singleOwl.id === owlId);
+    
 
-    const owls = owls.find((singleOwl) => singleOwl.id === id);
 
-    res.send(owls);
+    res.json(owlsEntity);
 });
 
 app.listen(port, () => {
